@@ -1,0 +1,172 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFF;
+    background: linear-gradient(
+        115deg, rgba(58, 58, 158, 0.8),
+        rgba(136, 136, 206, 0.7) ),
+        url('main.jpeg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin-bottom: 7px;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+}
+
+input, select, textarea, button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #848484;
+}
+
+.container {
+    max-width: 720px;
+    margin: 60px auto 0;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.text-center {
+    font-size: 33px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.description {
+    font-style: italic;
+    font-weight: 200;
+    font-size: 18px;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 40%);
+    margin-bottom: 0;
+}
+
+.form {
+    padding: 50px 45px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+}
+
+.clue {
+    font-size: 14px;
+    color: #e4e4e4;
+    margin-left: 5px;
+}
+
+.form-group {
+    margin: 0 auto 20px auto;
+    padding: 4px;
+}
+
+label {
+    display: flex;
+    margin-bottom: 7px;
+    align-items: baseline;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 37px;
+    border-radius: 5px;
+    padding: 6px 12px  ;
+    box-sizing: border-box;
+    border: 1px solid #ced4da;
+    background-color: #fff;
+    background-clip: padding-box;
+}
+
+input:focus {
+    outline: none !important;
+    border: 3px solid #1C3B73;
+    box-shadow: 1px 1px 8px 0px #1C3B73;
+    border-radius: 5px;
+  }
+
+select:focus {
+  outline: none !important;
+  border: 3px solid #1C3B73;
+  box-shadow: 1px 1px 8px 0px #1C3B73;
+  border-radius: 5px;
+}
+
+textarea:focus {
+    outline: none !important;
+    border: 3px solid #1C3B73;
+    box-shadow: 1px 1px 8px 0px #1C3B73;
+    border-radius: 5px;
+  }
+
+.input-radio, .input-checkbox {
+    margin-right: 10px;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+.input-textarea {
+    min-height: 120px;
+    width: 100%;
+    padding: 10px;
+    resize: vertical;
+    height: 120px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.submit-button {
+     width: 100%;
+     height: 46px;
+     color: #FFF;
+    background-color: #37AF65;
+    border-radius: 5px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    transition: all ease 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #34744d;
+    cursor: pointer;
+}
+
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 550px;
+        margin: 60px auto 0;
+    }
+    .header {
+        margin: 0 15px 35px;
+    }
+}
+
+@media (max-width: 479px) {
+    .form {
+        padding: 50px 10px;
+    }
+}
